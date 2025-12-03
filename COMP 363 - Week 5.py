@@ -1,11 +1,11 @@
-class NeedlemanWunch():
+class NeedlemanWunsch():
     table: list[list[str]| int] = []
 
     def __init__(self):
         self.table = []
         
         
-    def _needleman_wunch(self, A: str, B: str):
+    def _needleman_wunsch(self, A: str, B: str):
         #initilize points
         match = 1
         gap_penalty = -2
@@ -85,7 +85,7 @@ class NeedlemanWunch():
         for i in range(len(tests)):
             A = tests[i][0]
             B = tests[i][1]
-            a, b, matrix = self._needleman_wunch(A,B)
+            a, b, matrix = self._needleman_wunsch(A,B)
             print("A:",a)
             print("B:",b)
             #print(matrix)
@@ -102,7 +102,7 @@ tests = [
     ["DELICIOUS", "RELIGIOUS"],
 ]
 
-algorithm = NeedlemanWunch()
+algorithm = NeedlemanWunsch()
 algorithm.getComparisons(tests)
 
 tests1 = [
